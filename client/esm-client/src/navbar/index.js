@@ -4,23 +4,11 @@ import { Drawer, Button , Space} from "antd";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import "./Navbar.css";
+import RightMenu from "./RightMenu";
 
 
 
 class Navbar extends Component {
-
-  constructor() {
-    super();
-    this.state = {
-        showDrawer: false,
-    };
-    this.handleClick = this.handleClick.bind(this)
-}
-handleClick() {
-    this.setState({
-        showDrawer: !this.state.showDrawer
-    });
-}
   state = {
     current: "mail",
     visible: false,
@@ -59,6 +47,7 @@ handleClick() {
             closable={true}
             onClose={this.onClose}
             visible={this.state.visible}
+            onClick={this.onClose}
             extra={
               <Space>
                 <Button onClick={this.onClose}>Cancel</Button>
@@ -68,7 +57,8 @@ handleClick() {
               </Space>
             }
           >
-            <LeftMenu role={this.props} />
+            <RightMenu role={this.props}  />
+            
           </Drawer>
 
          
@@ -80,6 +70,7 @@ handleClick() {
 const mapStateToProps = (state) => {
   return {
     userInfo: state.auth.user,
+    
   };
 };
 export default connect(mapStateToProps, null)(Navbar);
