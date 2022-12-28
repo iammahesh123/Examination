@@ -19,7 +19,7 @@ class Profile extends Component {
     };
   }
   submitForm = (values) => {
-    // props.sendSignUpRequest(values);
+    //props.sendSignUpRequest(values);
     console.log(values);
   };
   static getDerivedStateFromProps(props, state) {
@@ -57,15 +57,16 @@ class Profile extends Component {
                 src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
                 className="avatar-image"
               />
-              <Popover content={this.state.isVerified ? verfied : notVerfied}>
+               <Popover content={this.state.isVerified ? notVerfied : verfied}>
                 <img
-                  src={
-                    this.state.isVerified ? "/verified.png" : "/notVerified.png"
+                  src={ 
+                    this.state.isVerified ?   "/notVerified.png" : "/verified.png"
                   }
                   alt="verification"
                   className="verified"
                 />
               </Popover>
+           
               <p
                 className="profile__heading"
                 style={{ margin: 0, textAlign: "center" }}

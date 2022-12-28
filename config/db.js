@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 require('dotenv').config()
 
 // Replace this with your MONGOURI.
-const MONGOURI = "mongodb+srv://talentbuzzData:C2niopYWNgRRhwQn@cluster0.1vgvb1a.mongodb.net/?retryWrites=true&w=majority";
-  //`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.jkqob.mongodb.net/${process.env.MONGODB_DATABASE_NAME}?retryWrites=true&w=majority`;
+const MONGOURI = process.env.MONGOURL;
 
 const InitiateMongoServer = async () => {
   try {
