@@ -3,7 +3,7 @@
     "bulids": [
         {
             "src":"./index.js",
-            "use":"@vercel/node"
+            "use":"@client/esm-client/node"
         
         }
     ],
