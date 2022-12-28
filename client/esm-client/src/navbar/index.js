@@ -41,7 +41,7 @@ class Navbar extends Component {
           </Button>
           <Drawer
             title="Menu"
-            placement="right"
+            placement="left"
             closable={true}
             onClose={this.onClose}
             visible={this.state.visible}
