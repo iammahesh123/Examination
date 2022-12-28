@@ -2,8 +2,7 @@
     "version":2,
     "bulids": [
         {
-            "src":"./index.js",
-            "use":"@client/esm-client/node"
+            "src":"./index.js"
         
         }
     ],
