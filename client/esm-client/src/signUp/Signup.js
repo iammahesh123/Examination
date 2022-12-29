@@ -149,10 +149,10 @@ function Signup(props) {
                 ]}
               >
                 <Select defaultValue="Section" disabled={showSelect}>
-                  <Option value="A">Batch-1</Option>
-                  <Option value="B">Batch-2</Option>
-                  <Option value="C">Batch-3</Option>
-                  <Option value="D">Batch-4</Option>
+                  <Option value="Batch-1">Batch-1</Option>
+                  <Option value="Batch-2">Batch-2</Option>
+                  <Option value="Batch-3">Batch-3</Option>
+                  <Option value="Batch-4">Batch-4</Option>
                 </Select>
               </Form.Item>
 

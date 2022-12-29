@@ -219,10 +219,10 @@ class CreateTest extends Component {
                   ]}
                 >
                   <Select defaultValue="Section">
-                    <Option value="A">Batch-1</Option>
-                    <Option value="B">Batch-2</Option>
-                    <Option value="C">Batch-3</Option>
-                    <Option value="D">Batch-4</Option>
+                    <Option value="Batch-1">Batch-1</Option>
+                    <Option value="Batch-2">Batch-2</Option>
+                    <Option value="Batch-3">Batch-3</Option>
+                    <Option value="Batch-4">Batch-4</Option>
                   </Select>
                 </Form.Item>
 
@@ -231,10 +231,9 @@ class CreateTest extends Component {
                   rules={[{ required: true, message: "Please select a class" }]}
                 >
                   <Select defaultValue="Class">
-                    <Option value="IX">Intermediate</Option>
-                    <Option value="IX">Diplamo</Option>
-                    <Option value="IX">B.tech</Option>
-                    <Option value="IX">IX</Option>
+                    <Option value="Intermediate">Intermediate</Option>
+                    <Option value="Diplamo">Diplamo</Option>
+                    <Option value="B.tech">B.tech</Option>
                     {/* <Option value="XI">XI</Option>
                     <Option value="XII">XII</Option> */}
                   </Select>

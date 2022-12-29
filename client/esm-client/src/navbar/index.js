@@ -50,10 +50,7 @@ class Navbar extends Component {
             onClick={this.onClose}
             extra={
               <Space>
-                <Button onClick={this.onClose}>Cancel</Button>
-                <Button type="primary" onClick={this.onClose}>
-                  OK
-                </Button>
+                <Button onClick={this.onClose}>Close</Button>
               </Space>
             }
           >
